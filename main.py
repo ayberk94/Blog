@@ -11,7 +11,7 @@ from functools import wraps
 from dotenv import load_dotenv
 import os
 
-load_dotenv(dotenv_path=r".\environ.env")
+load_dotenv()  #dotenv_path=r".env" default ist .env
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 app = Flask(__name__)
